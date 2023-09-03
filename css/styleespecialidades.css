@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "sourcesans";
+    src: url(../fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+
+body, main {
+    margin: 0px;
+    padding: 0px;
+    font-family: "sourcesans", Arial, Helvetica, sans-serif;
+    color: #7A787B;
+}
+
+header {
+    padding: 10px;
+    background-color: #00CAD1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navHeader {
+    border-top: 1px solid #7A787B;
+    padding-top: 5px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    max-width: 280px;
+    font-size: 18px;
+}
+nav.navHeader > a {
+    color: white;
+    text-decoration: none;
+}
+nav.navHeader > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+nav.navMain {
+    max-width: 700px;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navMain > a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #00C9D1;
+}
+.navMain > a:hover {
+    font-weight: bold;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+main > h1 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > h2 {
+    font-size: 1em;
+}
+section > p {
+    margin: 10px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.areaTabela {
+    width: 100%;
+}
+
+div.fotoTabela {
+    display: none;
+}
+
+table {
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+}
+th {
+    background-color: #00C9D1;
+    color: white;
+    padding: 5px;
+}
+td {
+    padding: 5px;
+}
+tbody > tr:nth-of-type(even) {
+    background-color: #F1F1F1;
+}
+tbody > tr:nth-of-type(odd) {
+    background-color: #CDCDCD;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #0C6E71;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 481px){
+    main > h1 {
+        font-size: 1.5em;
+    }
+    section {
+        font-size: 20px;
+    }
+    section > h2 {
+        font-size: 1.3em;
+    }
+    .areaTabela {
+        width: 80%;
+    }
+    table {
+        font-size: 18px;
+    }
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    main > h1 {
+        font-size: 2em;
+    }
+    .areaTabela {
+        display: flex;
+    }
+    div.fotoTabela {
+        width: 50%;
+        display: flex;
+    }
+    div.fotoTabela > img{
+        width: 100%;
+        display: flex;
+        flex: 1 1 auto;
+        margin: 2px;
+    }
+    nav.navHeader {
+        border: none;
+        gap: 0px;
+    }
+}

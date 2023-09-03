@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "sourcesans";
+    src: url(../fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+
+body, main {
+    margin: 0px;
+    padding: 0px;
+    font-family: "sourcesans", Arial, Helvetica, sans-serif;
+    color: #7A787B;
+}
+p {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding: 10px;
+    background-color: #00CAD1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    border-top: 1px solid #7A787B;
+    gap: 20px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    max-width: 280px;
+    font-size: 18px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+div.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(../imgs/recepcao.png);
+    background-size: cover;
+    height: 240px;
+    padding: 5px;
+}
+.bannerTxt {
+    margin-left: 5px;
+    font-weight: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.bannerTxt > h1 {
+    margin: 0;
+    font-weight: normal
+}
+section {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+section#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sobre > h2 {
+    font-size: 1.2em;
+}
+.sobreLista > ul{
+    text-align: left;
+}
+.sobreLista > ul > li {
+    margin: 5px 0px;
+}
+div.sobreImg {
+    display: none;
+}
+
+.areaCards {
+    margin: 10px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.404);
+    max-width: 350px;
+}
+.cardImg {
+    display: flex;
+    flex: 1 1 auto;
+}
+.cardImg > img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.botao {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #00CAD0;
+    color: white;
+    text-decoration: none;
+}
+.botao:hover {
+    background-color: #00a4aa;
+}
+
+#contato > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7A787B;
+}
+.mapa {
+    margin: 20px auto;
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 1100px;
+}
+iframe {
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #0C6E71;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 481px){
+    section {
+        font-size: 20px;
+    }
+    div.banner {
+        height: 500px;
+    }
+    div.bannerTxt {
+        margin-left: 10px;
+    }
+    div.bannerTxt > h1 {
+        font-size: 2em;
+    }
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav {
+        border: none;
+        gap: 0px;
+    }
+    div.bannerTxt {
+        margin-left: 15px;
+    }
+    div.bannerTxt > h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    div.divSobre {
+        display: flex;
+    }
+    div.sobreImg {
+        display: flex;
+    }
+}
